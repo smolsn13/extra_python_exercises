@@ -48,9 +48,9 @@ def guess_number():
         while guess != answer:
             num_guesses += 1
             if guess > answer:
-                guess = input("Sorry, the number is lower than " + guess + ". Please try again: ")
+                guess = input(f"Sorry, the number is lower than {guess}. Please try again: ")
             else:
-                guess = input("Sorry, the number is higher than " + guess + ". Please try again: ")
-        print("Yep, " + answer + " is the correct answer! That took you " + str(num_guesses) + " guesses.")
+                guess = input(f"Sorry, the number is higher than {guess}. Please try again: ")
+        print(f"Yep, {answer} is the correct answer! That took you " + str(num_guesses) + " guesses.")
 
 guess_number()
