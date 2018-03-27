@@ -9,3 +9,7 @@
 
 
 # *** your code here ***
+
+my_string = input("Type a sentence here: ")
+
+print( my_string[::-1] )

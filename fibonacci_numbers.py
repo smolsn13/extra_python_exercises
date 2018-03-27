@@ -12,3 +12,17 @@
 
 
 # *** your code here ***
+def fibonacci(n):
+	list = [0, 1]
+	if n == 1:
+	    list = [0]
+
+	elif n > len(list):
+		for i in range(n - 2):
+			list.append(list[i] + list[i + 1])
+
+
+	print(list)
+
+
+fibonacci(10)

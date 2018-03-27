@@ -36,3 +36,21 @@
 
 
 # *** your code here ***
+
+
+def guess_number():
+    guess = input("Guess what number I am thinking of, between 1-100: ")
+    answer = '31'
+    num_guesses = 1
+    if guess == answer:
+        print("You're a genius! " + answer + " was the correct number. You got it on the first try.")
+    else:
+        while guess != answer:
+            num_guesses += 1
+            if guess > answer:
+                guess = input("Sorry, the number is lower than " + guess + ". Please try again: ")
+            else:
+                guess = input("Sorry, the number is higher than " + guess + ". Please try again: ")
+        print("Yep, " + answer + " is the correct answer! That took you " + str(num_guesses) + " guesses.")
+
+guess_number()
